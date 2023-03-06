@@ -22,8 +22,5 @@ jobs: # list of things to do
       - name: Code Checkout
         uses: actions/checkout@v2
 
-      - name: Install Dependencies
-        run: npm ci
-
       - name: Code Linting
         run: npx --yes prettier --ignore-unknown --write
